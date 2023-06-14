@@ -1,0 +1,356 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+   
+}
+body{
+    box-sizing: border-box;
+    background: #BCBCBC;
+}
+
+header{
+    background: #FEFEFE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo-school{
+    width: 84px;
+    height: 62px;
+    margin: 0px 20px;
+
+}
+.section{
+    margin-top: 70px;
+}
+.active{
+    background: #E04622;
+    color: white;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    height: 86px;
+}
+
+.name-school{
+    text-transform: uppercase;
+    padding-top: 10px;
+
+}
+.name-school span{
+    color: #0E2D45;
+    font-weight: 700;
+    font-size: 13px;
+    
+}
+.name-school p{
+    color: #E04622;
+    font-weight: 700;
+    font-size: 13px;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+
+}
+
+.header-right .date{
+    margin-right: 20px;
+    background: #0E2D45 ;
+    color: white;
+    font-size: 13px;
+    padding: 8px;
+    position: relative;
+    border-radius: 4px;
+}
+.header-right .date::after{
+    content: '';
+    position: absolute;
+    background: #0E2D45 ;
+    padding: 5px;
+    transform: rotate(45deg);
+    z-index: 0;
+    right: -5px;
+    top: 13px;
+}
+.header-nav {
+    background: #0E2D45;
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+}
+.header-nav .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container ul {
+    display: flex;   
+    transition: .5s;
+    line-height: 56px;
+    
+}
+.container ul li{
+    
+    font-size: 13px;
+    transition: .2s;
+}
+.container .nav-menu li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px;
+    font-weight: 550;
+}
+
+.container  .nav-menu li a:hover{
+    background: #E04622;
+    transition: 0.2s;
+    border-radius: 10px;
+    
+    
+}
+
+/*Css phần searchbox*/
+.header-nav .search-box{
+    display: flex;
+    margin: 7px 0px;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.search-box input{
+    padding-left: 10px;
+    outline: none;
+    border: none;
+}
+.search-box button{
+    background: white;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
+}
+
+.popup{
+    line-height: 56px;
+    display: none;
+    
+}
+
+/*Css slider*/
+.carousel-item{
+    max-width: 100%;
+    height: 600px;
+    
+}
+.d-block{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider{
+    position: relative;
+    overflow: hidden;
+}
+.slider .cloud{
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    bottom: -240px;
+    width: 100%;
+}
+
+/*Phần giới Tiêu điểm*/
+.cards{
+    display: flex;
+}
+
+.card{
+    width: 30%;
+    margin: 2%;
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.1);
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+.card .card-top{
+    width: 100%;
+    height: 200px;
+}
+.card-top .avt-card{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-content{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.card-title{
+    color: #E04622;
+    font-size: 22px;
+    font-weight: 600;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 35px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.card-describe{
+    color: #595857;
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 66px;
+    font-size: 14px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+   
+
+}
+a.card-btn{
+    display: inline-block;
+    background: #0E2D45;
+    padding: 9px 40px;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    margin-top: auto;
+    width: 141px;
+    height: 42px;
+    text-decoration: none;
+    
+    flex-shrink: 0;
+}
+.card-btn:hover{
+    background: #E04622;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+/*Phần giới thiệu trường*/
+h1.title{
+
+    text-align: center; 
+    font-weight: 700; 
+    margin-top: 50px;
+}
+
+.about-school{
+    background: #0E2D45;
+    position: relative;
+    height: 600px;
+    width: 100%;
+    font-weight: 520;
+}
+
+.about-school-show .about-school-title{
+    font-weight: 700px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.about-school .about-school-content{
+    font-size: 13px;
+}
+.about-school .about-school-show{
+    position: absolute;
+    background-color:white ;
+    width: 55%;
+    z-index: 2;
+    top: 50px;
+    left: 100px;
+    padding: 30px;
+}
+.about-school::before{
+    content: '';
+    width: 100%;
+    height: 0;
+    border-left: 555px solid transparent;
+    border-right: 555px solid transparent;
+    border-top: 52px solid #0E2D45;
+    position: absolute;
+    bottom: -50px;
+}
+.about-school .about-img img{
+    width: 4%;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    z-index: 1;
+}
+/*Đội ngũ giáo viên*/
+.col-xl-3 .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-xl-3 .social .social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.col-xl-3 .social  .social-link:hover, .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+}
+/*Tin tức nổi bật*/
+.featured-news{
+    background: #F2F5F9;
+    height: 800px;
+}
+.featured-news .news-card{
+    display: flex;
+}
+.featured-news .news-card .news-cards{
+    width: 33%;
+    height: 173px;
+    margin: 20px;
+}
+.featured-news .news-card .news-cards .news-card-top{
+    width: 100%;
+    height: 200px;
+}
+.featured-news .news-card .news-cards .news-card-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+
+
+
